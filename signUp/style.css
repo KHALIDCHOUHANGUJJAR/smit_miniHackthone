@@ -1,0 +1,72 @@
+/* style.css */
+body {
+    background-color: #070F1B;
+    font-family: Arial, sans-serif;
+  color: aliceblue;
+}
+
+.card {
+    
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    margin-bottom: 20px;
+    color:#BCC02E;
+}
+.card-body{
+    background:#2B3139;
+    border-radius: 5px;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#BCC02E;
+    border: none;
+    border-bottom: 2px solid #eff2f5;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #a0ce7b;
+}
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid wheat;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.google img {
+    width: 2vw;
+    margin-right: 10px;
+}
+
+.google p {
+    margin: 0;
+    color:wheat;
+    font-weight: bold;
+    cursor: pointer;
+}
+#forgot:hover{
+    cursor: pointer;
+    color: red;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+    display: none;
+  }
+  @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
